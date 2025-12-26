@@ -1,6 +1,6 @@
 import random
 
-def guess_number(guesses, number=None):
+def guess_number(guesses, number=None):  
     if number is None:
         number = random.randint(1, 10)
 
@@ -19,7 +19,7 @@ def guess_number(guesses, number=None):
     print("❌ Number not guessed")
     return attempts
 
-def test_guess_number():
+def test_guess_number():  
     # Test case 1
     attempts = guess_number([2, 4, 6, 8], number=6)
     assert attempts == 3
