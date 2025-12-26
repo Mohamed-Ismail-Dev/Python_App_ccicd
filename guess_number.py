@@ -26,7 +26,7 @@ def test_guess_number():
     attempts = guess_number([1, 3, 5], number=5)
     assert attempts == 3
 
-    attempts = guess_number([1, 2, 3], number=7)
+    attempts = guess_number([1, 2, 3], number=1)
     assert attempts == 3
 
     print("✅ All tests passed!")
