@@ -30,12 +30,13 @@ jobs:
              python -m pytest guess_number.py
    lint:
       runs-on: ubuntu-latest
+      needs: build
 
       steps:
         - uses: actions/checkout@v5
-    
+  
         - name: Set up Python
-          uses: action/setup-python@checkoutv5
+          uses: actions/setup-python@checkoutv5
           with:
             python-version: 3.11
 
