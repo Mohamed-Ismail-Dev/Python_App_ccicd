@@ -36,7 +36,7 @@ jobs:
         - uses: actions/checkout@v5
   
         - name: Set up Python
-          uses: actions/setup-python@checkoutv5
+          uses: actions/setup-python@checkoutv2
           with:
             python-version: 3.11
 
